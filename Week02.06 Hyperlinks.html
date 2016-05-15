@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Week02.06 Hyperlinks</title>
+<style type="text/css">
+.summarystyle{padding-bottom:50px;padding-top:20px;}</style>
+</head>
+<body>
+<h1>CODE OF HYPERLINKS</h1>
+<div class="summarystyle">
+<h2>Summary</h2>
+<p>1. a标签定义超链接，用于从一张页面链接到另一张页面。<br>2. a元素最重要的属性是href属性，它指示链接的目标。<br>
+3. 被链接页面通常显示在当前浏览器窗口中，除非您规定了另一个目标（target 属性）。<br>4. 可以使用 CSS 来设置链接的样式。<br>
+5. name属性<br>6.绝对连接，相对连接，图片链接。</p></div>
+<p><a href="http://www.baidu.com" target="_blank" name="haha">Absolute Reference</a><br>
+将a标签的target属性设为"_blank"，该连接会在新窗口中打开。Test Pass!<br>
+如果target="_self"或不设置，那么会在当前窗口打开新页面。<br>
+如果target=“_top”，那么打开的页面会占据整个页面。<br>
+如果taget=“_parent”，那么打开的页面只是在父页面中打开。<br>
+现在可能有点不太好理解，这两个属性主要用于框架文件中。</p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p><a href="Week02.05.Image.html" target="_blank">Relative Reference 1</a><br>
+Link to a local file in the same folder. Test Pass!</p>
+<p><a href="TestHyperlink/1stPage.html" target="_blank">Relative Reference 2</a><br>
+Link to a local file in a different folder called "NewFolder".<br>
+Test Pass only for the scenario where the html doc is in the same folder with NewFolder.</p>
+<p><a href="#haha">Relative Reference3: Go to "Absolute Reference"</a><br>
+链接到同一个页面的不同位置,需要给目标位置一个name属性，再用#将该name设为href。Test Pass!</p>
+<p>Local Image Link<br>
+<a href="http://www.sina.com" target="_blank"><img src="sina logo.jpg" width="5%" alt="imagelink"/></a><br>
+The "clickable" component is a picture in local folder.</p>
+<p>Web Image Link<br>
+<a href="http://www.sohu.com"target="_blank">
+<img src="http://tech.cnr.cn/techgd/201310/W020131028522438669182.jpg" width="80px" alt="imagelink2"/></a><br>
+The "clickable" component is a picture from a web page.</p>
+<footer><p>**THIS IS FOOTER SECTION**</p></footer>
+</body>
+</html>
